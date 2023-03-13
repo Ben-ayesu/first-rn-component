@@ -27,7 +27,7 @@ const welcomeScreenStyles = StyleSheet.create({
         textAlign: 'center'
     },
     descriptionContainer: {
-        fontSize: 38,
+        fontSize: 24,
         color: '#EDEFEE',
         textAlign: 'center',
         padding: 20,
