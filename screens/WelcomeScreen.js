@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { View, Text, ScrollView } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export default function WelcomeScreen() {
     return (
-        <ScrollView indicatorStyle={"white"} style={{ flex: 1 }}>
+        <ScrollView style={menuStyles.container}>
             <Text style={{ padding: 40, fontSize: 50, color: '#EDEFEE', textAlign: 'center' }}>
                 Welcome to the Little Lemon
             </Text>
@@ -13,3 +14,10 @@ export default function WelcomeScreen() {
         </ScrollView>
     )
 }
+
+const menuStyles = StyleSheet.create({
+    container: {
+        indicatorStyle: "white",
+        flex: 1
+    }
+})
