@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { View } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 // Import Components
 import LittleLemonHeader from './components/LittleLemonHeader';
@@ -9,18 +10,23 @@ import WelcomeScreen from './screens/WelcomeScreen';
 export default function App() {
   return (
     <>
-      <View
-        style={{
-          flex: 1,
-          backgroundColor: '#495E57',
-        }}>
+      <View style={littleLemonAppStyles.headerAndScreenContainer}>
         <LittleLemonHeader />
         <WelcomeScreen />
       </View>
-      <View
-        style={{ backgroundColor: '#495E57' }}>
+      <View style={littleLemonAppStyles.footerContainer}>
         <Footer />
       </View>
     </>
   );
+}
+
+const littleLemonAppStyles = {
+  headerAndScreenContainer: {
+    flex: 1,
+    backgroundColor: '#495E57'
+  },
+  footerContainer: {
+    backgroundColor: '#495E57'
+  }
 }
